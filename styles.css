@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+US+Modern:wght@100..400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#1e3843, #295361, #3a6f82);
+  color: #fff;
+  font-family: "Playwrite US Modern", Arial, sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.snowflakes {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+.snowflake {
+  position: absolute;
+  top: -10px;
+  font-size: 1.5em;
+  color: #fff;
+  animation: snowfall 10s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(0);
+    left: calc(100% * var(--i));
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+.snowflake:nth-child(1) {
+  --i: 0.1;
+  left: 10%;
+  animation-delay: 0s;
+}
+.snowflake:nth-child(2) {
+  --i: 0.25;
+  left: 25%;
+  animation-delay: 2s;
+}
+.snowflake:nth-child(3) {
+  --i: 0.5;
+  left: 50%;
+  animation-delay: 4s;
+}
+.snowflake:nth-child(4) {
+  --i: 0.75;
+  left: 75%;
+  animation-delay: 1s;
+}
+.snowflake:nth-child(5) {
+  --i: 0.9;
+  left: 90%;
+  animation-delay: 3s;
+}
+
+.container {
+  max-width: 350px;
+  text-align: center;
+  position: relative;
+}
+
+.banner {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 20px auto;
+}
+
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  color: #333;
+  font-family: "Great Vibes", cursive;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  transform: perspective(600px) rotateY(180deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.card h1 {
+  font-size: 2em;
+  color: #b52f1c;
+  margin-bottom: 10px;
+}
+
+.card .mensaje {
+  font-size: 1.1em;
+  color: #333;
+  margin-top: 10px;
+  font-family: "Playwrite US Modern", Arial, sans-serif;
+}
+
+.card .firma {
+  margin-top: 20px;
+  font-size: 1em;
+  font-style: italic;
+  color: #333;
+}
+
+.decoracion {
+  width: 80px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#musicButton {
+  display: inline-block;
+  background: #b52f1c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-family: "Playwrite US Modern", Arial, sans-serif;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#musicButton:hover {
+  background: #8f2216;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: "Playwrite US Modern", cursive, Arial, sans-serif;
+  font-size: 0.9em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.sorpresa {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  font-family: "Playwrite US Modern", Arial, sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mensaje-oculto {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  max-width: 90%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.sorpresa:hover .mensaje-oculto {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.iconos-navidenos {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.iconos-navidenos .icono {
+  position: absolute;
+  width: 40px;
+  animation: flotacion 5s ease-in-out infinite alternate;
+}
+
+.nav-estrella {
+  top: -100px;
+  left: -80px;
+}
+
+.nav-regalo {
+  bottom: -100px;
+  right: -80px;
+}
+
+@keyframes flotacion {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
