@@ -2,6 +2,20 @@
 
 **Tarjeta de Navidad** es un proyecto interactivo desarrollado para enviar felicitaciones navideñas personalizadas con una experiencia visual atractiva y encantadora. Este proyecto utiliza HTML, CSS y JavaScript para crear una tarjeta navideña animada, incluyendo música y efectos especiales como nieve en pantalla.
 
+## Capturas de pantalla
+
+### Tarjeta principal
+
+![Tarjeta Principal](./images/screenshot-1.png)
+
+### Mensaje oculto
+
+![Mensaje Oculto](./images/screenshot-2.png)
+
+### Tarjeta en teléfono móvil
+
+![Tarjeta Principal](./images/screenshot-3.png)
+
 ## Funcionalidades
 
 - **Mensaje personalizado:** Incluye un mensaje navideño con decoraciones y diseño adaptado al tema festivo.
@@ -29,20 +43,6 @@
 - [CSS3](https://developer.mozilla.org/es/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 - [GSAP](https://greensock.com/gsap/)
-
-## Capturas de pantalla
-
-### Tarjeta principal
-
-![Tarjeta Principal](./images/screenshot-1.png)
-
-### Mensaje oculto
-
-![Mensaje Oculto](./images/screenshot-2.png)
-
-### Tarjeta en teléfono móvil
-
-![Tarjeta Principal](./images/screenshot-3.png)
 
 ## Implementación
 
