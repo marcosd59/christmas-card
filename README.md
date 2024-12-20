@@ -16,7 +16,7 @@
 - **Interactividad enriquecida:** Elementos interactivos para mejorar la experiencia del usuario.
 - **Personalizable:** Fácil de modificar para adaptarse a diferentes destinatarios y mensajes.
 
-## Tecnologías utilizadas1
+## Tecnologías utilizadas
 
 - **HTML:** Estructura de la tarjeta.
 - **CSS:** Diseño visual, incluyendo animaciones y estilos.
