@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarjeta de Navidad para Alexander</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./favicon.ico" type="ico" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playwrite+US+Modern:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/Draggable.min.js"></script>
+  </head>
+  <body>
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+      <div class="snowflake">❆</div>
+      <div class="snowflake">❅</div>
+    </div>
+
+    <div class="container">
+      <div class="card" id="card">
+        <img
+          src="./images/decoracion.png"
+          alt="Decoración navideña"
+          class="decoracion"
+        />
+        <h1>¡Feliz Navidad, Alexander!</h1>
+        <p class="mensaje">
+          No hemos tenido la oportunidad de conocernos a fondo, pero aun así
+          deseo que esta Navidad sea un momento de alegría, amor y unión para ti
+          y tus seres queridos.
+          <br /><br />
+          Que todos tus sueños y metas encuentren su camino en el nuevo año.
+        </p>
+        <p class="firma">De parte de Marcos, con cariño</p>
+      </div>
+
+      <div class="sorpresa">
+        <p>Desliza el cursor por aquí para una sorpresa 🎁</p>
+        <div class="mensaje-oculto">
+          ¡Gracias por formar parte del equipo, Alexander! ¡Tu buena actitud es
+          el mejor regalo de estas fiestas!
+        </div>
+      </div>
+
+      <div class="iconos-navidenos">
+        <img
+          src="./images/regalo.png"
+          alt="estrella navideña"
+          class="icono nav-estrella"
+        />
+        <img
+          src="./images/estrella.png"
+          alt="regalo navideño"
+          class="icono nav-regalo"
+        />
+      </div>
+
+      <button id="musicButton">▶ Música Navideña</button>
+      <audio id="music" loop>
+        <source src="./audio/navidad.mp3" type="audio/mpeg" />
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+    </div>
+    <footer>© 2024 Marcos Pool</footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
